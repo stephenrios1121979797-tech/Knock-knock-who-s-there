@@ -3,37 +3,28 @@ export default function ManagerPage() {
     <main>
       <h1>Manager Dashboard</h1>
 
-      <p>Activity by location (today)</p>
+      <p>Territory status</p>
 
-      <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20, background: "#d1fae5", padding: 10 }}>
         <h3>Main Office Area</h3>
-        <ul>
-          <li>Knocks: —</li>
-          <li>Talks: —</li>
-          <li>Walks: —</li>
-        </ul>
+        <p>Last worked: Today</p>
+        <p>Status: 🟢 Fresh</p>
       </div>
 
-      <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20, background: "#fef3c7", padding: 10 }}>
         <h3>North Location</h3>
-        <ul>
-          <li>Knocks: —</li>
-          <li>Talks: —</li>
-          <li>Walks: —</li>
-        </ul>
+        <p>Last worked: 5 days ago</p>
+        <p>Status: 🟡 Aging</p>
       </div>
 
-      <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20, background: "#fee2e2", padding: 10 }}>
         <h3>South Location</h3>
-        <ul>
-          <li>Knocks: —</li>
-          <li>Talks: —</li>
-          <li>Walks: —</li>
-        </ul>
+        <p>Last worked: 14 days ago</p>
+        <p>Status: 🔴 Stale</p>
       </div>
 
       <p style={{ marginTop: 30 }}>
-        Locations will be color-coded based on recency.
+        Territories change color based on how long it’s been since last activity.
       </p>
     </main>
   );
